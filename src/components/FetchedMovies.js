@@ -19,34 +19,57 @@ const FetchedMovies = ({ fetchedMovies, onToggle, disabled }) => {
       <div className="eight wide center aligned column">
         <div className="ui fluid placeholder">
           <div className="paragraph">
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
+            <div className="line" />
+            <div className="line" />
+            <div className="line" />
+            <div className="line" />
+            <div className="line" />
           </div>
           <div className="paragraph">
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
+            <div className="line" />
+            <div className="line" />
+            <div className="line" />
           </div>
           <div className="image"></div>
           <div className="paragraph">
-            <div className="line"></div>
+            <div className="line" />
 
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
+            <div className="line" />
+            <div className="line" />
+            <div className="line" />
+            <div className="line" />
           </div>
           <div className="paragraph">
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
+            <div className="line" />
+            <div className="line" />
+            <div className="line" />
+            <div className="line" />
+            <div className="line" />
+            <div className="line" />
+            <div className="line" />
+          </div>
+          <div className="image"></div>
+          <div className="paragraph">
+            <div className="line" />
+            <div className="line" />
+            <div className="line" />
+            <div className="line" />
+            <div className="line" />
+            <div className="line" />
+            <div className="line" />
+          </div>
+          <div className="paragraph">
+            <div className="line" />
+            <div className="line" />
+            <div className="line" />
+            <div className="line" />
+            <div className="line" />
+            <div className="line" />
+          </div>
+          <div className="paragraph">
+            <div className="line" />
+            <div className="line" />
+            <div className="line" />
           </div>
         </div>
       </div>
