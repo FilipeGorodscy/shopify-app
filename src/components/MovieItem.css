@@ -1,0 +1,15 @@
+.movie-item {
+  display: flex !important;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.movie-item:hover {
+  width: 100px;
+  color: black !important;
+}
+
+.bwidth {
+  border-top: 1px;
+}
