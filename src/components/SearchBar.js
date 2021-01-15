@@ -5,7 +5,7 @@ import useStickyState from "../hooks/useStickyState";
 import Header from "./Header";
 
 const SearchBar = ({ setMovies }) => {
-  const [term, setTerm] = useStickyState("Harry Potter");
+  const [term, setTerm] = useStickyState("Harry Potter", "term");
   const [debouncedValue, setDebouncedValue] = useState(term);
   const [page, setPage] = useStickyState(1, "page");
   const [total, setTotal] = useStickyState(0, "total");

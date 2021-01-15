@@ -6,7 +6,7 @@ import useStickyState from "../hooks/useStickyState";
 
 const App = () => {
   const [movies, setMovies] = useState([]);
-  const [search, setSearch] = useStickyState(true);
+  const [search, setSearch] = useStickyState(true, "search");
   return (
     <div className="ui container">
       <br />
