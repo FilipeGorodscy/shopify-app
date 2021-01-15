@@ -1,5 +1,6 @@
 import React from "react";
 import Error from "./Error";
+import Initial from "./Initial";
 import MovieItem from "./MovieItem";
 
 const FetchedMovies = ({ fetchedMovies, onToggle, disabled }) => {
@@ -78,6 +79,7 @@ const FetchedMovies = ({ fetchedMovies, onToggle, disabled }) => {
 
   if (fetchedMovies[0].error) return <Error />;
 
+  if (fetchedMovies[0].initial) return <Initial />;
   return renderedList;
 };
 

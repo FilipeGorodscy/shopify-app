@@ -5,7 +5,7 @@ import useStickyState from "../hooks/useStickyState";
 import Header from "./Header";
 
 const SearchBar = ({ setMovies }) => {
-  const [term, setTerm] = useStickyState("Harry Potter", "term");
+  const [term, setTerm] = useStickyState("", "term");
   const [debouncedValue, setDebouncedValue] = useState(term);
   const [page, setPage] = useStickyState(1, "page");
   const [total, setTotal] = useStickyState(0, "total");
@@ -21,6 +21,9 @@ const SearchBar = ({ setMovies }) => {
       if (data.Error) {
         setMovies([{ error: 1 }]);
         setTotal(0);
+      }
+      if (!term) {
+        setMovies([{ initial: 1 }]);
       }
     };
     const handler = setTimeout(() => {
