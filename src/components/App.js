@@ -5,7 +5,7 @@ import Movies from "./Movies";
 
 const App = () => {
   const [movies, setMovies] = useState([]);
-  const [search, setSearch] = useState();
+  const [search, setSearch] = useState(true);
   return (
     <div className="ui container">
       <br />
