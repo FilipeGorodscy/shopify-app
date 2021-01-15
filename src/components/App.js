@@ -2,10 +2,11 @@ import React, { useState } from "react";
 
 import SearchBar from "./SearchBar";
 import Movies from "./Movies";
+import useStickyState from "../hooks/useStickyState";
 
 const App = () => {
   const [movies, setMovies] = useState([]);
-  const [search, setSearch] = useState(true);
+  const [search, setSearch] = useStickyState(true);
   return (
     <div className="ui container">
       <br />
