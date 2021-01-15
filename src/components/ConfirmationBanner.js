@@ -16,6 +16,7 @@ const ConfirmationBanner = ({
         You have selected five movies. Are you sure these are the ones you want
         to nominate?
       </div>
+      <br />
       <NominationMovies onToggle={onToggle} nominatedMovies={nominatedMovies} />
       <div className="inline">
         <button

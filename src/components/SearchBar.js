@@ -33,27 +33,23 @@ const SearchBar = ({ setMovies }) => {
     };
   }, [term, debouncedValue, setMovies, setTotal, page]);
 
-  const renderedSearchBar = (
-    <div className="ui segment search-bar">
-      <form onSubmit={(e) => e.preventDefault()} className="ui form">
-        <div className="field">
-          <label>Search for a movie</label>
-          <input
-            value={term}
-            type="text"
-            onChange={(e) => {
-              setTerm(e.target.value);
-              setPage(1);
-            }}
-          />
-        </div>
-      </form>
-    </div>
-  );
-
   return (
     <div>
-      {renderedSearchBar}
+      <div className="ui segment search-bar">
+        <form onSubmit={(e) => e.preventDefault()} className="ui form">
+          <div className="field">
+            <label>Search for a movie</label>
+            <input
+              value={term}
+              type="text"
+              onChange={(e) => {
+                setTerm(e.target.value);
+                setPage(1);
+              }}
+            />
+          </div>
+        </form>
+      </div>
       {debouncedValue && total > 0 && (
         <Header
           debouncedValue={debouncedValue}
